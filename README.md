@@ -95,7 +95,7 @@ Receive notification → Open pending requests dashboard
 ```
  
 ### Admin — Platform Management
- 
+#### Including the Placement Cell
 ```
 Login → Manage venues (add/edit/remove, set capacity)
      → Manage club accounts + coordinator access
