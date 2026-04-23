@@ -15,9 +15,9 @@
 }
 
 .logo {
-  font-size: 20px;
-  font-weight: 700;
-  letter-spacing: 1px;
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: -1px;
   color: var(--text-primary);
   text-decoration: none;
   transition: opacity 0.3s ease;
@@ -30,11 +30,10 @@
 .login-card {
   width: 100%;
   max-width: 420px;
-  background: rgba(255, 255, 255, 0.9);
-  border: 1px solid var(--border-color);
-  border-radius: 12px;
-  padding: 40px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  background: white;
+  border-radius: 16px;
+  padding: 48px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
 }
 
 /* Tabs */
@@ -42,7 +41,7 @@
   display: flex;
   gap: 0;
   margin-bottom: 32px;
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 2px solid var(--border-color);
 }
 
 .tab {
@@ -52,11 +51,13 @@
   border: none;
   color: var(--text-tertiary);
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 700;
   cursor: pointer;
   transition: all 0.3s ease;
-  border-bottom: 2px solid transparent;
-  margin-bottom: -1px;
+  border-bottom: 3px solid transparent;
+  margin-bottom: -2px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .tab:hover {
@@ -83,20 +84,23 @@
 
 .form-group label {
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--text-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .form-group input,
 .form-group select {
-  padding: 12px;
-  background: var(--bg-primary);
-  border: 1px solid var(--border-color);
+  padding: 12px 16px;
+  background: var(--bg-secondary);
+  border: 1.5px solid var(--border-color);
   color: var(--text-primary);
-  border-radius: 6px;
+  border-radius: 8px;
   font-size: 14px;
   transition: all 0.3s ease;
   font-family: inherit;
+  font-weight: 500;
 }
 
 .form-group input::placeholder,
@@ -108,8 +112,8 @@
 .form-group select:focus {
   outline: none;
   border-color: var(--accent);
-  background: var(--bg-secondary);
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  background: white;
+  box-shadow: 0 0 0 3px rgba(217, 70, 239, 0.1);
 }
 
 .form-group select {
@@ -118,28 +122,30 @@
 }
 
 .form-group select option {
-  background: var(--bg-primary);
+  background: white;
   color: var(--text-primary);
 }
 
 /* Submit Button */
 .btn-submit {
-  padding: 12px;
+  padding: 14px 16px;
   background: var(--accent);
   color: white;
   border: none;
-  border-radius: 6px;
-  font-weight: 600;
+  border-radius: 8px;
+  font-weight: 700;
   font-size: 15px;
   cursor: pointer;
   transition: all 0.3s ease;
   margin-top: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .btn-submit:hover {
   background: var(--accent-dark);
   transform: translateY(-2px);
-  box-shadow: 0 8px 16px rgba(59, 130, 246, 0.2);
+  box-shadow: 0 8px 16px rgba(217, 70, 239, 0.25);
 }
 
 .btn-submit:active {
@@ -152,12 +158,13 @@
   color: var(--text-tertiary);
   font-size: 14px;
   margin: 0;
+  font-weight: 500;
 }
 
 .form-help a {
   color: var(--accent);
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 700;
   cursor: pointer;
   transition: color 0.3s ease;
 }
@@ -178,6 +185,6 @@
   }
 
   .logo {
-    font-size: 18px;
+    font-size: 20px;
   }
 }

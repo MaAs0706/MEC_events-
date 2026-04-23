@@ -11,16 +11,16 @@ html, body, #root {
 
 :root {
   --bg-primary: #ffffff;
-  --bg-gradient: linear-gradient(135deg, #f5f3ff 0%, #fffef5 100%);
+  --bg-gradient: linear-gradient(135deg, #ffc0e8 0%, #fff5d6 100%);
   --bg-secondary: #f8f7fc;
   --bg-tertiary: #f0eef8;
-  --text-primary: #1a1a1a;
-  --text-secondary: #666666;
+  --text-primary: #1a1a2e;
+  --text-secondary: #4a4a6a;
   --text-tertiary: #999999;
   --border-color: #e5e5e5;
-  --accent: #3b82f6;
-  --accent-dark: #2563eb;
-  --accent-light: #dbeafe;
+  --accent: #d946ef;
+  --accent-dark: #c026d3;
+  --accent-light: #f0d4ff;
   --error: #ef4444;
   --success: #10b981;
 }
