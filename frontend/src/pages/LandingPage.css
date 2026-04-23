@@ -1,8 +1,8 @@
 .landing-container {
   width: 100%;
   min-height: 100vh;
-  background: #0f172a;
-  color: #ffffff;
+  background: var(--bg-gradient);
+  color: var(--text-primary);
   overflow-x: hidden;
 }
 
@@ -11,8 +11,9 @@
   position: sticky;
   top: 0;
   z-index: 100;
-  background: #0f172a;
-  border-bottom: 1px solid #1e293b;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border-color);
   padding: 16px 0;
 }
 
@@ -27,9 +28,9 @@
 
 .logo {
   font-size: 20px;
-  font-weight: bold;
-  letter-spacing: 2px;
-  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--text-primary);
 }
 
 .nav-actions {
@@ -39,19 +40,19 @@
 }
 
 .nav-link {
-  color: #94a3b8;
+  color: var(--text-secondary);
   text-decoration: none;
   font-size: 14px;
   transition: color 0.3s ease;
 }
 
 .nav-link:hover {
-  color: #ffffff;
+  color: var(--accent);
 }
 
 .nav-button {
   padding: 10px 24px;
-  background: #ef4444;
+  background: var(--accent);
   color: white;
   text-decoration: none;
   border-radius: 6px;
@@ -61,7 +62,7 @@
 }
 
 .nav-button:hover {
-  background: #dc2626;
+  background: var(--accent-dark);
   transform: translateY(-2px);
 }
 
@@ -75,18 +76,15 @@
 
 .hero-content h1 {
   font-size: 3.5rem;
-  font-weight: bold;
+  font-weight: 700;
   margin-bottom: 20px;
   line-height: 1.2;
-}
-
-.highlight {
-  color: #ef4444;
+  color: var(--text-primary);
 }
 
 .hero-content p {
   font-size: 1.1rem;
-  color: #94a3b8;
+  color: var(--text-secondary);
   margin-bottom: 40px;
   max-width: 600px;
   margin-left: auto;
@@ -103,7 +101,7 @@
 
 .btn-primary {
   padding: 14px 32px;
-  background: #ef4444;
+  background: var(--accent);
   color: white;
   text-decoration: none;
   border-radius: 8px;
@@ -116,9 +114,9 @@
 }
 
 .btn-primary:hover {
-  background: #dc2626;
+  background: var(--accent-dark);
   transform: translateY(-2px);
-  box-shadow: 0 8px 16px rgba(239, 68, 68, 0.3);
+  box-shadow: 0 8px 16px rgba(59, 130, 246, 0.2);
 }
 
 .btn-primary.large {
@@ -129,8 +127,8 @@
 .btn-secondary {
   padding: 14px 32px;
   background: transparent;
-  color: #ffffff;
-  border: 1px solid #334155;
+  color: var(--accent);
+  border: 1px solid var(--accent);
   text-decoration: none;
   border-radius: 8px;
   font-weight: 600;
@@ -141,8 +139,7 @@
 }
 
 .btn-secondary:hover {
-  border-color: #ef4444;
-  color: #ef4444;
+  background: var(--accent-light);
 }
 
 /* Stats */
@@ -151,18 +148,18 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
   padding: 40px 0;
-  border-top: 1px solid #1e293b;
-  border-bottom: 1px solid #1e293b;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
 }
 
 .stat h3 {
   font-size: 2.5rem;
   margin: 0 0 8px 0;
-  color: #ef4444;
+  color: var(--accent);
 }
 
 .stat p {
-  color: #64748b;
+  color: var(--text-tertiary);
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -180,6 +177,7 @@
   font-size: 2.5rem;
   margin-bottom: 60px;
   text-align: center;
+  color: var(--text-primary);
 }
 
 .features-grid {
@@ -190,16 +188,17 @@
 
 .feature-card {
   padding: 40px;
-  background: #1a2849;
-  border: 1px solid #334155;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid var(--border-color);
   border-radius: 12px;
   text-align: center;
   transition: all 0.3s ease;
 }
 
 .feature-card:hover {
-  border-color: #ef4444;
+  border-color: var(--accent);
   transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(59, 130, 246, 0.1);
 }
 
 .feature-icon {
@@ -210,10 +209,11 @@
 .feature-card h3 {
   font-size: 1.3rem;
   margin-bottom: 12px;
+  color: var(--text-primary);
 }
 
 .feature-card p {
-  color: #94a3b8;
+  color: var(--text-secondary);
   line-height: 1.6;
 }
 
@@ -223,21 +223,22 @@
   margin: 0 auto;
   padding: 100px 40px;
   text-align: center;
-  background: linear-gradient(135deg, rgba(239, 68, 68, 0.1) 0%, rgba(124, 58, 237, 0.05) 100%);
+  background: rgba(59, 130, 246, 0.05);
   border-radius: 12px;
 }
 
 .cta-section h2 {
   font-size: 2.5rem;
   margin-bottom: 40px;
+  color: var(--text-primary);
 }
 
 /* Footer */
 .landing-footer {
   text-align: center;
   padding: 40px;
-  border-top: 1px solid #1e293b;
-  color: #64748b;
+  border-top: 1px solid var(--border-color);
+  color: var(--text-tertiary);
   font-size: 14px;
 }
 

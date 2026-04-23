@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import './Login.css'
 
@@ -15,15 +15,11 @@ function Login() {
 
   const handleSignIn = (e) => {
     e.preventDefault()
-    // TODO: Call backend API
-    // For now, redirect to student dashboard
     navigate('/dashboard/student')
   }
 
   const handleSignUp = (e) => {
     e.preventDefault()
-    // TODO: Call backend API
-    // For now, redirect based on role
     if (userRole === 'student') {
       navigate('/dashboard/student')
     } else if (userRole === 'coordinator') {
@@ -37,7 +33,7 @@ function Login() {
     <div className="login-container">
       {/* Back to home */}
       <div className="login-header">
-        <a href="/" className="logo">NEXUS.</a>
+        <Link to="/" className="logo">NEXUS</Link>
       </div>
 
       {/* Main Card */}
