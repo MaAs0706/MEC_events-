@@ -30,7 +30,7 @@
 .login-card {
   width: 100%;
   max-width: 420px;
-  background: white;
+  background: rgb(60, 42, 42);
   border-radius: 16px;
   padding: 48px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);

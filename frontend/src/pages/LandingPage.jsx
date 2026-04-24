@@ -38,7 +38,7 @@ function LandingPage() {
             transition={{ delay: 0.1 }}
           >
             Every event<br />
-            your campus <span className="accent-text">runs on.</span>
+            Our campus <span className="accent-text">runs on.</span>
           </motion.h1>
 
           <motion.p
@@ -57,7 +57,7 @@ function LandingPage() {
             transition={{ delay: 0.3 }}
           >
             <Link to="/login" className="btn-browse">Browse events →</Link>
-            <Link to="/login" className="btn-join">🔥 Join NEXUS free</Link>
+            <Link to="/login" className="btn-join"> Join NEXUS </Link>
           </motion.div>
 
           <div className="hero-stats">
@@ -66,7 +66,7 @@ function LandingPage() {
               <div className="stat-label">Events live</div>
             </div>
             <div className="stat">
-              <div className="stat-number">12+</div>
+              <div className="stat-number">0</div>
               <div className="stat-label">Campus venues</div>
             </div>
             <div className="stat">
@@ -115,11 +115,8 @@ function LandingPage() {
         </div>
       </section>
 
-      {/* Footer Warning */}
-      <footer className="footer-warning">
-        <p>Frontend Preview Only. Please wake servers to enable backend functionality. <a href="#wake">Wake up servers</a></p>
-        <a href="#made" className="made-by">Made with Emergent</a>
-      </footer>
+      
+      
     </div>
   )
 }
