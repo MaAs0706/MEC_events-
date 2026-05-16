@@ -24,7 +24,11 @@ function Login() {
       navigate('/dashboard/student')
     } else if (userRole === 'coordinator') {
       navigate('/dashboard/coordinator')
-    } else {
+    } 
+    else if (userRole ==='approver') {
+      navigate('/dashboard/approver')
+    }
+    else {
       navigate('/dashboard/admin')
     }
   }
