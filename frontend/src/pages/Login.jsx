@@ -159,7 +159,7 @@ function Login() {
                 <option value="student">Student</option>
                 <option value="coordinator">Event Coordinator</option>
                 <option value="admin">Admin</option>
-                <option value="other">Approver</option>
+                <option value="approver">Approver</option>
               </select>
             </div>
 
